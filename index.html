@@ -1,0 +1,2385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rohan Engineering - Precision pipeline fabrication and industrial structure fabrication specialists in Maharashtra.">
+    <meta name="keywords" content="Pipeline Fabrication, Structural Steel, NDT Testing, Equipment Installation, CUI Studies, Maharashtra Engineering, Rohan Engineering">
+    <meta name="author" content="Rohan Engineering">
+    <meta property="og:title" content="Rohan Engineering | Precision. Strength. Reliability.">
+    <meta property="og:description" content="Precision pipeline fabrication and industrial structure fabrication specialists since 2019.">
+    <meta property="og:image" content="https://rohanengineering.in/logo.jpeg">
+    <meta property="og:url" content="https://rohanengineering.in">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <link rel="icon" type="image/jpeg" href="logo.jpeg">
+    <link rel="apple-touch-icon" href="logo.jpeg">
+    <link rel="canonical" href="https://rohanengineering.in">
+    
+    <title>Rohan Engineering | Precision. Strength. Reliability.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --color-primary: #0C2340;
+            --color-secondary: #B0BEC5;
+            --color-accent: #5C9A32;
+            --color-bg-light: #F5F7FA;
+            --color-bg-dark: #0D1B2A;
+            --color-text-main: #1A1A1A;
+            --color-text-muted: #666666;
+            --color-white: #FFFFFF;
+
+            --font-heading: 'Bebas Neue', display, sans-serif;
+            --font-body: 'Inter', sans-serif;
+
+            --padding-section: 120px 5%;
+            --transition-base: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --transition-slow: 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+            --glow-accent: rgba(92, 154, 50, 0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text-main);
+            background-color: var(--color-bg-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 1.1;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Accessibility / UTILS */
+        .hidden {
+            display: none;
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1), transform 0.7s cubic-bezier(0.16,1,0.3,1);
+        }
+
+        .fade-up.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Staggered children animation */
+        .fade-up.in-view .stat-card,
+        .fade-up.in-view .service-card,
+        .fade-up.in-view .hex-item {
+            animation: popIn 0.5s cubic-bezier(0.16,1,0.3,1) both;
+        }
+        .fade-up.in-view .stat-card:nth-child(1) { animation-delay: 0.05s; }
+        .fade-up.in-view .stat-card:nth-child(2) { animation-delay: 0.1s; }
+        .fade-up.in-view .stat-card:nth-child(3) { animation-delay: 0.15s; }
+        .fade-up.in-view .stat-card:nth-child(4) { animation-delay: 0.2s; }
+        .fade-up.in-view .service-card:nth-child(1) { animation-delay: 0.05s; }
+        .fade-up.in-view .service-card:nth-child(2) { animation-delay: 0.1s; }
+        .fade-up.in-view .service-card:nth-child(3) { animation-delay: 0.15s; }
+        .fade-up.in-view .service-card:nth-child(4) { animation-delay: 0.2s; }
+        .fade-up.in-view .service-card:nth-child(5) { animation-delay: 0.25s; }
+        .fade-up.in-view .service-card:nth-child(6) { animation-delay: 0.3s; }
+        .fade-up.in-view .service-card:nth-child(7) { animation-delay: 0.35s; }
+        .fade-up.in-view .service-card:nth-child(8) { animation-delay: 0.4s; }
+        .fade-up.in-view .service-card:nth-child(9) { animation-delay: 0.45s; }
+        .fade-up.in-view .hex-item:nth-child(1) { animation-delay: 0.05s; }
+        .fade-up.in-view .hex-item:nth-child(2) { animation-delay: 0.12s; }
+        .fade-up.in-view .hex-item:nth-child(3) { animation-delay: 0.19s; }
+        .fade-up.in-view .hex-item:nth-child(4) { animation-delay: 0.26s; }
+        .fade-up.in-view .hex-item:nth-child(5) { animation-delay: 0.33s; }
+
+        @keyframes popIn {
+            from { opacity: 0; transform: translateY(25px) scale(0.95); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 28px;
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition-base);
+            border: none;
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background-color: var(--color-accent);
+            color: var(--color-white);
+        }
+
+        .btn-primary:hover {
+            background-color: #4b8029;
+            box-shadow: 0 4px 15px rgba(92, 154, 50, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--color-white);
+            color: var(--color-white);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--color-white);
+            color: var(--color-primary);
+        }
+
+        /* NAV STYLES */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 22, 40, 0.95);
+            backdrop-filter: blur(10px);
+            transition: var(--transition-base);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .navbar.scrolled {
+            padding: 15px 5%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .navbar.scrolled .nav-logo img {
+            height: 50px !important;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            color: var(--color-white);
+        }
+
+        .icon-gear {
+            width: 32px !important;
+            height: 32px !important;
+            min-width: 32px;
+            min-height: 32px;
+            flex-shrink: 0;
+            fill: var(--color-accent);
+            display: block;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--color-secondary);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: var(--transition-base);
+            position: relative;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--color-accent);
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-accent);
+            transition: width var(--transition-base);
+        }
+
+        .nav-link.active::after,
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background: var(--color-white);
+            transition: 0.3s;
+        }
+
+        @media (max-width: 991px) {
+            .nav-links {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(10, 22, 40, 0.98);
+                flex-direction: column;
+                padding: 20px 0;
+                gap: 20px;
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                transition: clip-path 0.4s ease-in-out;
+            }
+
+            .nav-links.open {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+
+        /* HERO STYLES */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: var(--color-bg-dark);
+            color: var(--color-white);
+            overflow: hidden;
+            padding: 0 5%;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: radial-gradient(circle at center, rgba(10, 22, 40, 0.8) 0%, rgba(10, 22, 40, 1) 100%);
+        }
+
+        .hero-grid {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%;
+            height: 200%;
+            z-index: 2;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+            animation: pan 40s linear infinite;
+        }
+
+        @keyframes pan {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(-40px, -40px);
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            max-width: 800px;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border: 1px solid var(--color-secondary);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            color: var(--color-secondary);
+        }
+
+        .hero-heading {
+            font-size: 4.5rem;
+            line-height: 1;
+            margin-bottom: 20px;
+            border-right: 4px solid var(--color-accent);
+            white-space: nowrap;
+            overflow: hidden;
+            width: 0;
+        }
+
+        .hero-subtext {
+            font-size: 1.25rem;
+            font-weight: 300;
+            margin-bottom: 40px;
+            color: var(--color-secondary);
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 20px;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+        }
+
+        .scroll-indicator span {
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            color: var(--color-secondary);
+        }
+
+        .scroll-mouse {
+            width: 30px;
+            height: 50px;
+            border: 2px solid var(--color-secondary);
+            border-radius: 15px;
+            position: relative;
+        }
+
+        .scroll-wheel {
+            width: 4px;
+            height: 8px;
+            background: var(--color-accent);
+            border-radius: 2px;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: scrollWheel 2s infinite;
+        }
+
+        @keyframes scrollWheel {
+            0% {
+                top: 10px;
+                opacity: 1;
+            }
+
+            100% {
+                top: 25px;
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-heading {
+                font-size: 3rem;
+                white-space: normal;
+                width: 100%;
+                border: none;
+            }
+
+            .hero-ctas {
+                flex-direction: column;
+            }
+        }
+
+        /* ABOUT STYLES */
+        .section {
+            padding: var(--padding-section);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--color-primary);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: var(--color-accent);
+        }
+
+        .about-text p {
+            margin-bottom: 15px;
+            color: var(--color-text-muted);
+            font-size: 1.05rem;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .stat-card {
+            background: var(--color-white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            border-bottom: 3px solid transparent;
+            transition: transform 0.4s cubic-bezier(0.16,1,0.3,1), box-shadow 0.4s ease, border-color 0.3s;
+            will-change: transform;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(92,154,50,0.06) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+
+        .stat-card:hover::before { opacity: 1; }
+
+        .stat-card:hover {
+            border-bottom-color: var(--color-accent);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-family: var(--font-heading);
+            color: var(--color-primary);
+            background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+            font-weight: 500;
+        }
+
+        @media (max-width: 991px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* VISION & MISSION STYLES */
+        .vision-section {
+            background: var(--color-bg-dark);
+            color: var(--color-white);
+            padding: 80px 5%;
+            position: relative;
+        }
+
+        .vision-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .vision-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 16px;
+            transition: transform 0.5s cubic-bezier(0.16,1,0.3,1), background 0.4s, border-color 0.4s, box-shadow 0.4s;
+            will-change: transform;
+            backdrop-filter: blur(8px);
+        }
+
+        .vision-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--color-accent);
+            box-shadow: 0 0 30px rgba(92, 154, 50, 0.15);
+        }
+
+        .vision-icon {
+            width: 40px !important;
+            height: 40px !important;
+            min-width: 40px;
+            min-height: 40px;
+            flex-shrink: 0;
+            fill: var(--color-accent);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .vision-card h3 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .vision-card p {
+            color: var(--color-secondary);
+        }
+
+        @media (max-width: 768px) {
+            .vision-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* SERVICES STYLES */
+        .services-bg {
+            background: var(--color-bg-light);
+        }
+
+        .services-container {
+            margin-top: 40px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--color-white);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border: 2px solid transparent;
+            transition: transform 0.4s cubic-bezier(0.16,1,0.3,1), box-shadow 0.4s ease, border-color 0.3s;
+            position: relative;
+            cursor: pointer;
+            will-change: transform;
+            overflow: hidden;
+        }
+
+        .service-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(92,154,50,0.04) 0%, transparent 50%);
+            opacity: 0;
+            transition: opacity 0.4s;
+            pointer-events: none;
+        }
+        .service-card:hover::after { opacity: 1; }
+
+        .service-card:hover {
+            border-color: var(--color-accent);
+            box-shadow: 0 16px 40px rgba(92, 154, 50, 0.15);
+        }
+
+        .service-icon {
+            width: 50px !important;
+            height: 50px !important;
+            min-width: 50px;
+            min-height: 50px;
+            flex-shrink: 0;
+            fill: var(--color-primary);
+            margin-bottom: 20px;
+            transition: fill 0.3s, transform 0.4s cubic-bezier(0.16,1,0.3,1);
+            display: block;
+        }
+
+        .service-card:hover .service-icon {
+            fill: var(--color-accent);
+            transform: scale(1.15) rotate(5deg);
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--color-primary);
+        }
+
+        .service-short-desc {
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+        }
+
+        .service-full-desc {
+            display: none;
+            margin-top: 15px;
+            color: var(--color-text-main);
+            font-size: 0.95rem;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        @media (max-width: 991px) {
+            .services-grid {
+                display: flex;
+                overflow-x: auto;
+                scroll-snap-type: x mandatory;
+                margin: 0 -5%;
+                padding: 0 5%;
+                gap: 20px;
+            }
+
+            .service-card {
+                min-width: 300px;
+                scroll-snap-align: start;
+            }
+        }
+
+        /* INDUSTRIES STYLES */
+        .industries-bg {
+            background: radial-gradient(circle at top right, rgba(13, 27, 42, 1) 0%, rgba(10, 22, 40, 1) 100%);
+            color: var(--color-white);
+            padding-bottom: 120px;
+        }
+
+        .industries-bg .section-title {
+            color: var(--color-white);
+        }
+
+        .hex-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1000px;
+            margin: 60px auto 0;
+            gap: 20px;
+        }
+
+        .hex-item {
+            width: 180px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.05);
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.5s cubic-bezier(0.16,1,0.3,1), background 0.3s;
+            cursor: pointer;
+            text-align: center;
+            padding: 20px;
+            will-change: transform;
+        }
+
+        .hex-item:hover {
+            background: var(--color-accent);
+            transform: scale(1.05);
+            color: var(--color-primary);
+        }
+
+        .hex-icon {
+            width: 40px !important;
+            height: 40px !important;
+            min-width: 40px;
+            min-height: 40px;
+            flex-shrink: 0;
+            fill: var(--color-secondary);
+            margin-bottom: 15px;
+            transition: var(--transition-base);
+            display: block;
+        }
+
+        .hex-item:hover .hex-icon {
+            fill: var(--color-primary);
+        }
+
+        .hex-item span {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .hex-item {
+                width: 140px;
+                height: 160px;
+            }
+
+            .hex-icon {
+                width: 30px !important;
+                height: 30px !important;
+                min-width: 30px;
+                min-height: 30px;
+                margin-bottom: 10px;
+            }
+
+            .hex-item span {
+                font-size: 1rem;
+            }
+        }
+
+        /* STRENGTHS STYLES */
+        .strengths-bg {
+            background: var(--color-white);
+        }
+
+        .strengths-container {
+            max-width: 800px;
+            margin: 40px auto 0;
+        }
+
+        .strength-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: var(--transition-slow);
+        }
+
+        .strength-item.right {
+            flex-direction: row-reverse;
+            transform: translateX(50px);
+        }
+
+        .strength-item.in-view {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .strength-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--color-bg-light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            border: 2px solid var(--color-accent);
+        }
+
+        .strength-icon svg {
+            width: 30px !important;
+            height: 30px !important;
+            min-width: 30px;
+            min-height: 30px;
+            flex-shrink: 0;
+            display: block;
+            fill: var(--color-primary);
+        }
+
+        .strength-content {
+            flex-grow: 1;
+            background: var(--color-bg-light);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .strength-content h3 {
+            font-size: 1.2rem;
+            color: var(--color-primary);
+            margin-bottom: 10px;
+        }
+
+        .progress-track {
+            width: 100%;
+            height: 6px;
+            background: #e0e0e0;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            width: 0;
+            height: 100%;
+            background: var(--color-accent);
+            transition: width 1s ease-in-out;
+        }
+
+        @media (max-width: 768px) {
+            .strength-item.right {
+                flex-direction: row;
+            }
+
+            .strength-content {
+                padding: 15px;
+            }
+        }
+
+        /* ORG CHART STYLES */
+        .org-bg {
+            background: var(--color-bg-light);
+            padding: 80px 5%;
+            overflow-x: auto;
+        }
+
+        .org-tree {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-width: 800px;
+            margin-top: 40px;
+            padding-bottom: 50px;
+        }
+
+        .org-node {
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: 15px 30px;
+            border-radius: 4px;
+            border-bottom: 4px solid var(--color-accent);
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            position: relative;
+            cursor: default;
+            transition: var(--transition-base);
+            text-align: center;
+        }
+
+        .org-node:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .org-tooltip {
+            position: absolute;
+            bottom: 120%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--color-white);
+            color: var(--color-primary);
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            padding: 10px 15px;
+            border-radius: 4px;
+            width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-base);
+            shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-transform: none;
+            letter-spacing: normal;
+            z-index: 10;
+            pointer-events: none;
+            border: 1px solid #eee;
+        }
+
+        .org-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 6px;
+            border-style: solid;
+            border-color: var(--color-white) transparent transparent transparent;
+        }
+
+        .org-node:hover .org-tooltip {
+            opacity: 1;
+            visibility: visible;
+            bottom: calc(100% + 10px);
+        }
+
+        .org-level {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            position: relative;
+            width: 100%;
+        }
+
+        .org-line-down,
+        .org-line-horiz {
+            background: var(--color-secondary);
+            position: absolute;
+        }
+
+        .org-root {
+            margin-bottom: 40px;
+        }
+
+        .org-root::after {
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 40px;
+            background: var(--color-secondary);
+        }
+
+        .org-children {
+            position: relative;
+            padding-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .org-children::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 15%;
+            width: 70%;
+            height: 2px;
+            background: var(--color-secondary);
+        }
+
+        .org-child {
+            position: relative;
+        }
+
+        .org-child::before {
+            content: '';
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            width: 2px;
+            height: 40px;
+            background: var(--color-secondary);
+            transform: translateX(-50%);
+        }
+
+        .org-team-roles {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .org-role {
+            background: var(--color-white);
+            color: var(--color-primary);
+            border: 1px solid var(--color-secondary);
+            padding: 8px 15px;
+            font-size: 0.9rem;
+            font-family: var(--font-body);
+            border-radius: 4px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        /* FACILITY STYLES */
+        .facility-bg {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+            position: relative;
+            padding-bottom: 80px;
+        }
+
+        .facility-bg .section-title {
+            color: var(--color-white);
+        }
+
+        .facility-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 40px;
+        }
+
+        .facility-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 8px;
+            backdrop-filter: blur(5px);
+        }
+
+        .facility-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--color-accent);
+        }
+
+        .facility-addr {
+            font-size: 1.1rem;
+            color: var(--color-secondary);
+            margin-bottom: 30px;
+        }
+
+        .equipment-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .equipment-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.1rem;
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: var(--transition-base);
+        }
+
+        .equipment-item.in-view {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .equip-icon {
+            width: 24px !important;
+            height: 24px !important;
+            min-width: 24px;
+            min-height: 24px;
+            flex-shrink: 0;
+            fill: var(--color-accent);
+            display: block;
+        }
+
+        @media (max-width: 991px) {
+            .facility-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* CLIENTS STYLES */
+        .clients-bg {
+            background: var(--color-bg-light);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            margin-top: 40px;
+            white-space: nowrap;
+            padding: 20px 0;
+        }
+
+        .marquee-track {
+            display: inline-block;
+            animation: scrollMarquee 20s linear infinite;
+        }
+
+        .marquee-item {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-white);
+            border: 1px solid #ddd;
+            padding: 20px 40px;
+            border-radius: 4px;
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--color-text-muted);
+            margin: 0 15px;
+            min-width: 250px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+            opacity: 0.7;
+            transition: var(--transition-base);
+        }
+
+        .marquee-item:hover {
+            opacity: 1;
+            border-color: var(--color-accent);
+            color: var(--color-primary);
+        }
+
+        @keyframes scrollMarquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .testimonial-card {
+            max-width: 800px;
+            margin: 60px auto 0;
+            background: var(--color-white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid var(--color-accent);
+            text-align: left;
+        }
+
+        .quote-icon {
+            width: 40px;
+            height: 40px;
+            fill: rgba(92, 154, 50, 0.2);
+            margin-bottom: 10px;
+        }
+
+        .testimonial-text {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--color-text-muted);
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+        }
+
+        /* CONTACT STYLES */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .contact-form {
+            background: var(--color-white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .form-control {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid #ddd;
+            padding: 15px 0 5px 0;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            background: transparent;
+            transition: var(--transition-base);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-bottom-color: var(--color-accent);
+        }
+
+        .form-label {
+            position: absolute;
+            top: 15px;
+            left: 0;
+            color: var(--color-text-muted);
+            transition: var(--transition-base);
+            pointer-events: none;
+        }
+
+        .form-control:focus~.form-label,
+        .form-control:valid~.form-label {
+            top: -10px;
+            font-size: 0.8rem;
+            color: var(--color-accent);
+        }
+
+        .btn-submit {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .contact-info-item {
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .contact-icon {
+            width: 24px !important;
+            height: 24px !important;
+            min-width: 24px;
+            min-height: 24px;
+            fill: var(--color-accent);
+            flex-shrink: 0;
+            margin-top: 5px;
+            display: block;
+        }
+
+        .contact-text h4 {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .contact-text p {
+            color: var(--color-text-muted);
+            font-size: 0.95rem;
+        }
+
+        .map-placeholder {
+            width: 100%;
+            height: 250px;
+            background: #eee;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-text-muted);
+            border: 2px dashed #ccc;
+            margin-top: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* FOOTER STYLES */
+        .footer {
+            background: var(--color-primary);
+            color: var(--color-white);
+            padding: 80px 5% 30px;
+            position: relative;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-brand .nav-logo {
+            margin-bottom: 15px;
+        }
+
+        .footer-brand p {
+            color: var(--color-secondary);
+            font-size: 0.95rem;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+
+        .footer-heading {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: var(--color-secondary);
+            transition: var(--transition-base);
+            font-size: 0.95rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--color-accent);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--color-secondary);
+        }
+
+        @media (max-width: 991px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--color-accent);
+            border-radius: 50%;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-base);
+            z-index: 99;
+            box-shadow: 0 4px 15px rgba(92, 154, 50, 0.4);
+            border: none;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            background: #4b8029;
+        }
+
+        .back-to-top svg {
+            width: 24px !important;
+            height: 24px !important;
+            fill: white;
+            display: block;
+            flex-shrink: 0;
+        }
+
+        /* --- PRODUCTION READINESS & RESPONSIVENESS PATCHES --- */
+        @media (max-width: 991px) {
+            .section { padding: 80px 5%; }
+            .hero-heading { font-size: 3.5rem; }
+        }
+        @media (max-width: 768px) {
+            .section { padding: 60px 4%; }
+            .hero-heading { font-size: 2.2rem; border-right: none; white-space: normal; width: 100%; }
+            .hero-subtext { font-size: 1rem; }
+            .section-title { font-size: 2rem; }
+            .stat-number { font-size: 2.2rem; }
+            .service-card { min-width: 260px; padding: 20px; }
+            .facility-card { padding: 25px; }
+            .contact-form { padding: 25px; }
+            .nav-logo { font-size: 1.4rem; }
+            .nav-logo img { height: 40px !important; }
+        }
+        @media (max-width: 480px) {
+            .hero-ctas { flex-direction: column; width: 100%; }
+            .hero-ctas .btn { width: 100%; text-align: center; justify-content: center; }
+            .strength-item { flex-direction: column !important; text-align: center; }
+            .strength-item.right { flex-direction: column !important; }
+            .contact-grid .form-group[style] { flex-direction: column; gap: 10px; }
+        }
+
+        /* ---- PRETEXT INTERACTIVE ENHANCEMENTS ---- */
+
+        /* Smooth number counter glow */
+        .stat-number.counting {
+            animation: numberPulse 0.5s ease;
+        }
+        @keyframes numberPulse {
+            0% { text-shadow: 0 0 0 transparent; }
+            50% { text-shadow: 0 0 20px var(--glow-accent); }
+            100% { text-shadow: 0 0 0 transparent; }
+        }
+
+        /* Hero canvas integration */
+        #hero-particles {
+            mix-blend-mode: screen;
+        }
+
+        /* Enhanced nav with blur reveal */
+        .navbar {
+            transition: padding 0.4s, box-shadow 0.4s, background 0.4s;
+        }
+
+        /* Ripple effect on buttons */
+        .btn {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+            transform: scale(0);
+            animation: rippleAnim 0.6s ease-out;
+            pointer-events: none;
+        }
+        @keyframes rippleAnim {
+            to { transform: scale(4); opacity: 0; }
+        }
+
+        /* Glowing border on contact form focus */
+        .contact-form:focus-within {
+            box-shadow: 0 5px 30px rgba(0,0,0,0.05), 0 0 0 2px rgba(92,154,50,0.2);
+            transition: box-shadow 0.3s ease;
+        }
+
+        /* Enhanced org chart nodes */
+        .org-node {
+            transition: transform 0.4s cubic-bezier(0.16,1,0.3,1), box-shadow 0.4s;
+        }
+
+        /* Testimonial card hover */
+        .testimonial-card {
+            transition: transform 0.4s cubic-bezier(0.16,1,0.3,1), box-shadow 0.4s;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+        }
+
+        /* Footer link micro-animations */
+        .footer-links a {
+            display: inline-block;
+            transition: color 0.3s, padding-left 0.3s, transform 0.3s;
+        }
+        .footer-links a:hover {
+            transform: translateX(3px);
+        }
+
+        /* Smooth section transitions */
+        .vision-section, .industries-bg, .facility-bg {
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* ---- OPPO-Inspired Scroll Enhancements ---- */
+
+        /* GPU-accelerated sections for scroll effects */
+        .about-section, .vision-section, .services-bg,
+        .industries-bg, .strengths-bg, .org-bg,
+        .facility-bg, .clients-bg, #contact {
+            will-change: opacity, transform;
+        }
+
+        /* Hero parallax performance */
+        .hero-content, .hero-grid, .hero-badge {
+            will-change: transform, opacity;
+        }
+
+        /* Section divider — diagonal cut */
+        .vision-section::before {
+            content: '';
+            position: absolute;
+            top: -60px;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: var(--color-bg-light);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 40%);
+            z-index: 1;
+        }
+
+        /* Strength bars — smooth width transition overrides */
+        .strength-item .progress-fill {
+            transition: width 1.2s cubic-bezier(0.16,1,0.3,1) !important;
+        }
+
+        /* Equipment items inherit scroll reveal */
+        .equipment-item {
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.16,1,0.3,1);
+        }
+        .scroll-revealed .equipment-item,
+        .in-view .equipment-item {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .equipment-item:nth-child(1) { transition-delay: 0.1s; }
+        .equipment-item:nth-child(2) { transition-delay: 0.2s; }
+        .equipment-item:nth-child(3) { transition-delay: 0.3s; }
+        .equipment-item:nth-child(4) { transition-delay: 0.4s; }
+        
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo" style="gap:15px">
+            <img src="logo.jpeg" alt="Rohan Engineering Logo" style="height: 60px; width: auto; transition: height 0.3s ease;" />
+            ROHAN ENGINEERING
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation Menu" style="background: transparent; border: none; padding: 0;">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#industries" class="nav-link">Industries</a></li>
+            <li><a href="#strengths" class="nav-link">Strengths</a></li>
+            <li><a href="#facility" class="nav-link">Facility</a></li>
+            <li><a href="#clients" class="nav-link">Clients</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#contact" class="btn btn-primary" style="margin-left:10px;">Get Quote</a></li>
+        </ul>
+    </nav>
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="container hero-content">
+            <div class="hero-badge fade-up in-view">Est. 2019 | Karjat, Maharashtra</div>
+            <h1 class="hero-heading" id="typewriter">Precision. Strength. Reliability.</h1>
+            <p class="hero-subtext fade-up in-view" style="transition-delay: 0.2s;">Pipeline Fabrication & Industrial
+                Structure Specialists since 2019</p>
+            <div class="hero-ctas fade-up in-view" style="transition-delay: 0.4s;">
+                <a href="#services" class="btn btn-primary">Explore Services</a>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+        <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+            <span>SCROLL</span>
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section about-section" id="about">
+        <div class="container about-grid">
+            <div class="about-text fade-up">
+                <h2 class="section-title">Who We Are</h2>
+                <p>We are pleased to introduce Rohan Engineering, established in 2019, and recognized for our expertise
+                    in pipeline fabrication and industrial structure fabrication work. Over the years, we have built a
+                    reputation for delivering reliable, high-quality engineering solutions tailored to client needs.</p>
+                <p>Our services extend beyond fabrication. We provide material selection support in line with ASME and
+                    ASTM standards, ensuring compliance and durability. We are highly skilled in pipeline inspection and
+                    in calculating the remaining life of pipelines, helping clients plan for long-term operational
+                    efficiency. Our team also specializes in corrosion under insulation (CUI) studies, offering valuable
+                    insights to enhance pipeline and structural reliability.</p>
+                <p>With a strong team of engineers, we excel in technical analysis, project scheduling, and execution
+                    planning. In addition, we provide insulation services and supply high-quality materials as per
+                    customer requirements. Our operations strictly follow good welding practices and procedures,
+                    ensuring safety, precision, and longevity in every project.</p>
+            </div>
+            <div class="about-stats fade-up">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="2">0</div>
+                    <div class="stat-label">Major Clients</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">Safety Compliance</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="vision-section">
+        <div class="container vision-grid">
+            <div class="vision-card fade-up">
+                <svg class="vision-icon" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z" />
+                </svg>
+                <h3>Our Vision</h3>
+                <p>To be the leading global provider of advanced fabrication solutions, transforming industries with
+                    innovation, precision, and sustainability.</p>
+            </div>
+            <div class="vision-card fade-up" style="transition-delay: 0.2s;">
+                <svg class="vision-icon" viewBox="0 0 24 24">
+                    <path d="M12 2L1 21h22L12 2zm0 3.8l7.5 13.2H4.5L12 5.8zM11 10h2v4h-2v-4zm0 5h2v2h-2v-2z" />
+                </svg>
+                <h3>Our Mission</h3>
+                <p>To set the benchmark for excellence in fabrication by delivering world-class quality and reliability
+                    in every project.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section services-bg" id="services">
+        <div class="container">
+            <div class="fade-up">
+                <h2 class="section-title">Core Services</h2>
+                <p style="color:var(--color-text-muted); max-width:600px; margin-top:10px;">Click on any service to
+                    explore detailed solutions.</p>
+            </div>
+            <div class="services-container services-grid fade-up" style="transition-delay:0.2s;">
+                <!-- Card 1 -->
+                <div class="service-card" onclick="toggleService(this)">
+                    <svg class="service-icon" viewBox="0 0 24 24">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                    </svg>
+                    <h3>Pipeline Material Selection</h3>
+                    <p class="service-short-desc">Support for ASME & ASTM standard material selection.</p>
+                    <div class="service-full-desc">We ensure durability and standard compliance through careful
+                        selection of piping materials depending on operational conditions.</div>
+                </div>
+                <!-- Card 2 -->
+                <div class="service-card" onclick="toggleService(this)">
+                    <svg class="service-icon" viewBox="0 0 24 24">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                    </svg>
+                    <h3>SS, MS & CS Pipeline Fabrication</h3>
+                    <p class="service-short-desc">Fabrication and fitting for multiple pipeline types.</p>
+                    <div class="service-full-desc">Comprehensive fabrication services for Stainless Steel, Mild Steel,
+                        and Carbon Steel pipelines with precision fittings.</div>
+                </div>
+                <!-- Card 3 -->
+                <div class="service-card" onclick="toggleService(this)">
+                    <svg class="service-icon" viewBox="0 0 24 24">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                    </svg>
+                    <h3>Structural Steel Fabrication</h3>
+                    <p class="service-short-desc">Heavy industrial structural steel fabrication work.</p>
+                    <div class="service-full-desc">Designing, cutting, welding, and assembling of structural steel
+                        components tailored to your industrial facility requirements.</div>
+                </div>
+                <!-- Card 4 -->
+                <div class="service-card" onclick="toggleService(this)">
+                    <svg class="service-icon" viewBox="0 0 24 24">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                    </svg>
+                    <h3>Equipment Installation</h3>
+                    <p class="service-short-desc">Secure installation and ongoing maintenance.</p>
+                    <div class="service-full-desc">Reliable heavy machinery installation, alignment, and preventative
+                        maintenance strategies to minimize downtime.</div>
+                </div>
+                <!-- Card 5 -->
+                <div class="service-card" onclick="toggleService(this)">
+                    <svg class="service-icon" viewBox="0 0 24 24">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                    </svg>
+                    <h3>Pipeline Inspection & Remnant Life</h3>
+                    <p class="service-short-desc">Calculations and regular inspections for safety.</p>
+                    <div class="service-full-desc">Assessing current pipeline health, calculating theoretical remnant
+                        life, and advising on safe operational parameters.</div>
+                </div>
+                <!-- Card 6 -->
+                <div class="service-card" onclick="toggleService(this)">
+                    <svg class="service-icon" viewBox="0 0 24 24">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                    </svg>
+                    <h3>Lifting & Shifting Plans</h3>
+                    <p class="service-short-desc">Preparation and monitoring of load shifts.</p>
+                    <div class="service-full-desc">Detailed CAD-assisted planning for the safe lifting and shifting of
+                        massive industrial components and systems.</div>
+                </div>
+                <!-- Card 7 -->
+                <div class="service-card" onclick="toggleService(this)">
+                    <svg class="service-icon" viewBox="0 0 24 24">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                    </svg>
+                    <h3>Supply of Industrial Materials</h3>
+                    <p class="service-short-desc">Pipelines, fittings, and structural material.</p>
+                    <div class="service-full-desc">Sourcing and supplying of premium grade industrial material to
+                        guarantee your operations are built on a solid foundation.</div>
+                </div>
+                <!-- Card 8 -->
+                <div class="service-card" onclick="toggleService(this)">
+                    <svg class="service-icon" viewBox="0 0 24 24">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                    </svg>
+                    <h3>CUI Studies</h3>
+                    <p class="service-short-desc">Corrosion Under Insulation assessment.</p>
+                    <div class="service-full-desc">Advanced NDT techniques and systematic studies to identify and
+                        mitigate hidden corrosion under pipeline lagging.</div>
+                </div>
+                <!-- Card 9 -->
+                <div class="service-card" onclick="toggleService(this)">
+                    <svg class="service-icon" viewBox="0 0 24 24">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                    </svg>
+                    <h3>Insulation Services</h3>
+                    <p class="service-short-desc">Thermal and acoustic structural insulation.</p>
+                    <div class="service-full-desc">Applying high-grade insulation materials for process temperature
+                        control and energy efficiency.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section industries-bg" id="industries">
+        <div class="container fade-up">
+            <h2 class="section-title text-center" style="display:block; text-align:center; margin-bottom:10px;">
+                Industries Served</h2>
+            <div class="hex-grid">
+                <div class="hex-item">
+                    <svg class="hex-icon" viewBox="0 0 24 24">
+                        <path d="M17 11V3H7v4H3v14h18V11h-4zm-8-6h6v6h-6V5zm-4 6h4v8H5v-8zm14 8h-4v-8h4v8z" />
+                    </svg>
+                    <span>Industrial Sheds</span>
+                </div>
+                <div class="hex-item">
+                    <svg class="hex-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M18.6 19.5v-1.4l-3.3-4.3c-.3-.4-.5-.9-.5-1.4V6h1V4H8.2v2h1v6.4c0 .5-.2.9-.5 1.4L5.4 18.1v1.4h13.2zm-9.3-1.4l2.1-2.7h2.2l2.1 2.7H9.3z" />
+                    </svg>
+                    <span>Pharmaceutical</span>
+                </div>
+                <div class="hex-item">
+                    <svg class="hex-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M9 2v2h6V2H9zm10.5 17L17 14.5v-7C17 6.1 16.1 5 15 5H9C7.9 5 7 6.1 7 7.5v7L4.5 19v2h15v-2zM9 7.5h6v6.3l1.8 2.2H7.2L9 13.8V7.5z" />
+                    </svg>
+                    <span>Chemical Industry</span>
+                </div>
+                <div class="hex-item">
+                    <svg class="hex-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z" />
+                    </svg>
+                    <span>Food & Biotech</span>
+                </div>
+                <div class="hex-item">
+                    <svg class="hex-icon" viewBox="0 0 24 24">
+                        <path
+                            d="M12 11c1.66 0 3-1.34 3-3S13.66 5 12 5 9 6.34 9 8s1.34 3 3 3zm0-8c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5zM4 21c0-2.8 2.2-5 5-5h6c2.8 0 5 2.2 5 5v1H4v-1z" />
+                    </svg>
+                    <span>Oil & Gas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section strengths-bg" id="strengths">
+        <div class="container fade-up">
+            <h2 class="section-title text-center" style="display:block; text-align:center;">Key Strengths</h2>
+            <div class="strengths-container">
+                <div class="strength-item left">
+                    <div class="strength-icon"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                        </svg></div>
+                    <div class="strength-content">
+                        <h3>Experienced Lead Mechanical Team</h3>
+                        <div class="progress-track">
+                            <div class="progress-fill" data-width="95%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="strength-item right">
+                    <div class="strength-icon"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        </svg></div>
+                    <div class="strength-content">
+                        <h3>Welding Standard Practices</h3>
+                        <div class="progress-track">
+                            <div class="progress-fill" data-width="100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="strength-item left">
+                    <div class="strength-icon"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                        </svg></div>
+                    <div class="strength-content">
+                        <h3>Skilled Workforce</h3>
+                        <div class="progress-track">
+                            <div class="progress-fill" data-width="90%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="strength-item right">
+                    <div class="strength-icon"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.05-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.56-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.73 8.87c-.12.21-.08.49.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.06.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .43-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.49-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z" />
+                        </svg></div>
+                    <div class="strength-content">
+                        <h3>Advanced Equipment & NDT Testing</h3>
+                        <div class="progress-track">
+                            <div class="progress-fill" data-width="85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="strength-item left">
+                    <div class="strength-icon"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z" />
+                        </svg></div>
+                    <div class="strength-content">
+                        <h3>Well-Equipped Workshop</h3>
+                        <div class="progress-track">
+                            <div class="progress-fill" data-width="95%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="strength-item right">
+                    <div class="strength-icon"><svg viewBox="0 0 24 24">
+                            <path
+                                d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+                        </svg></div>
+                    <div class="strength-content">
+                        <h3>On-Time Project Completion</h3>
+                        <div class="progress-track">
+                            <div class="progress-fill" data-width="100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section org-bg" id="org">
+        <div class="container fade-up">
+            <h2 class="section-title text-center" style="display:block; text-align:center;">Our Organization</h2>
+            <div class="org-tree">
+                <div class="org-node org-root">
+                    Project Planning & Scheduling
+                    <div class="org-tooltip">Responsible for overall project lifecycle, timelines, and resource
+                        allocation.</div>
+                </div>
+                <div class="org-children">
+                    <div class="org-child">
+                        <div class="org-node">
+                            Marketing Team
+                            <div class="org-tooltip">Client relations, business development, and market strategy.</div>
+                        </div>
+                    </div>
+                    <div class="org-child">
+                        <div class="org-node">
+                            Account / Purchase
+                            <div class="org-tooltip">Financial management, material procurement, and vendor relations.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org-child">
+                        <div class="org-node"
+                            style="border-bottom-color:var(--color-primary); background:var(--color-accent);">
+                            Lead Mechanical
+                            <div class="org-tooltip">Core execution block overseeing all site and fabrication
+                                operations.</div>
+                        </div>
+                        <div class="org-team-roles">
+                            <div class="org-role">Supervisor</div>
+                            <div class="org-role">Welder</div>
+                            <div class="org-role">Fitter</div>
+                            <div class="org-role">Rigger</div>
+                            <div class="org-role">Helper</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section facility-bg" id="facility">
+        <div class="container fade-up">
+            <h2 class="section-title">Our Facility</h2>
+            <div class="facility-grid" style="margin-top: 40px;">
+                <div class="facility-card">
+                    <h3>Workshop Facility</h3>
+                    <div class="facility-addr">
+                        <strong>Location:</strong> Ambernath, Maharashtra<br>
+                        <span style="font-size: 0.9rem; color: #888;">
+                            007, K1 building I wing Udyog Bhavan<br>
+                            Near nakshatra hotel Ambernath MIDC<br>
+                            AMBERNATH EAST 421506
+                        </span>
+                    </div>
+                    <div class="equipment-list">
+                        <div class="equipment-item">
+                            <svg class="equip-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.06-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.05-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.56-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.73 8.87c-.12.21-.08.49.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.06.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .43-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.49-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z" />
+                            </svg>
+                            Pneumatic Pressure Testing Machine
+                        </div>
+                        <div class="equipment-item" style="transition-delay: 0.1s;">
+                            <svg class="equip-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
+                            </svg>
+                            Hydraulic Pressure Testing Machine
+                        </div>
+                        <div class="equipment-item" style="transition-delay: 0.2s;">
+                            <svg class="equip-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M21 4H3v16h18V4zm-10 7H9v2H7v-2H5V9h2V7h2v2h2v2zm6 4h-8v-2h8v2zm0-4h-4V9h4v2z" />
+                            </svg>
+                            Welding Machine Setup
+                        </div>
+                        <div class="equipment-item" style="transition-delay: 0.3s;">
+                            <svg class="equip-icon" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 9A3 3 0 009 12a3 3 0 003 3 3 3 0 003-3 3 3 0 00-3-3m0 8a5 5 0 110-10 5 5 0 010 10m0-13l3 3 1.5-1.5L12 1 7.5 5.5 9 7l3-3zM7.5 18.5L9 17l3 3 3-3 1.5 1.5L12 23l-4.5-4.5z" />
+                            </svg>
+                            NDT Test Machine (UT Tester)
+                        </div>
+                    </div>
+                </div>
+                <div class="facility-card">
+                    <h3>Corporate Office</h3>
+                    <div class="facility-addr">
+                        <strong>Location:</strong> Ambernath, Maharashtra<br>
+                        <span style="font-size: 0.9rem; color: #888;">
+                            007, K1 building I wing Udyog Bhavan<br>
+                            Near nakshatra hotel Ambernath MIDC<br>
+                            AMBERNATH EAST 421506
+                        </span>
+                    </div>
+                    <p style="color:var(--color-secondary);">Our corporate office is the hub for project planning,
+                        scheduling, and client relations, working in tandem with our workshop to ensure seamless
+                        execution.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section clients-bg" id="clients">
+        <div class="container fade-up">
+            <h2 class="section-title text-center" style="display:block; text-align:center;">Valuable Customers</h2>
+
+            <div class="marquee-container">
+                <div class="marquee-track">
+                    <!-- Duplicate items for continuous scroll effect -->
+                    <div class="marquee-item">Indus Biotech Pvt Ltd.</div>
+                    <div class="marquee-item">Godrej</div>
+
+                    <div class="marquee-item">Indus Biotech Pvt Ltd.</div>
+                    <div class="marquee-item">Godrej</div>
+
+                    <div class="marquee-item">Indus Biotech Pvt Ltd.</div>
+                    <div class="marquee-item">Godrej</div>
+                </div>
+            </div>
+
+            <div class="testimonial-card fade-up">
+                <svg class="quote-icon" viewBox="0 0 24 24">
+                    <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                </svg>
+                <div class="testimonial-text">
+                    "Rohan Engineering has consistently delivered high-quality
+                    fabrication projects for our industrial needs. Their precision and adherence to safety standards
+                    form a solid foundation for our continued partnership. Highly recommended!"
+                </div>
+                <div class="testimonial-author">
+                    Godrej
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="contact">
+        <div class="container fade-up">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid" style="margin-top:40px;">
+                <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleFormSubmit(event, this)">
+                    <input type="hidden" name="access_key" value="528f0d2e-1be2-43a3-b428-8f75cc97e991">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" id="formName" required>
+                        <label class="form-label" for="formName">Full Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="company" id="formCompany" required>
+                        <label class="form-label" for="formCompany">Company / Organization</label>
+                    </div>
+                    <div class="form-group" style="display:flex; gap:20px; flex-wrap:wrap;">
+                        <div style="flex:1; position:relative; min-width:200px;">
+                            <input type="email" class="form-control" name="email" id="formEmail" required>
+                            <label class="form-label" for="formEmail">Email</label>
+                        </div>
+                        <div style="flex:1; position:relative; min-width:200px;">
+                            <input type="tel" class="form-control" name="phone" id="formPhone" required>
+                            <label class="form-label" for="formPhone">Phone Number</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="formSubject" required>
+                        <label class="form-label" for="formSubject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" id="formMessage" rows="4" required></textarea>
+                        <label class="form-label" for="formMessage">Message</label>
+                    </div>
+                    <input type="hidden" name="subject" value="New Contact Form Request: Rohan Engineering">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
+                    <div id="formStatus" style="display:none; margin-top:15px; text-align:center; font-weight:500;"></div>
+                </form>
+
+                <div class="contact-details">
+                    <div class="contact-info-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                        </svg>
+                        <div class="contact-text">
+                            <h4>Head Office & Workshop</h4>
+                            <p>007, K1 building I wing Udyog Bhavan near nakshatra hotel Ambernath MIDC AMBERNATH EAST
+                                421506</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56M16.48 14.82c-.32-.1-.68-.02-.91.21l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.21c.28-.27.36-.66.25-.96M7.12 8.52c-.36-1.11-.56-2.3-.56-3.52M6.56 5C6.56 3.9 5.66 3 4.56 3H4C2.9 3 2 3.9 2 5c0 9.94 8.06 18 18 18 1.1 0 2-.9 2-2v-.56c0-1.1-.9-2-2-2" />
+                        </svg>
+                        <div class="contact-text">
+                            <h4>Call Us</h4>
+                            <p>8087581720<br>Contact Person: Rohan Nalawade</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                        <div class="contact-text">
+                            <h4>Email Us</h4>
+                            <p>rohan.engineering2@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="map-container"
+                        style="width: 100%; height: 350px; margin-top: 20px; border-radius: 8px; overflow: hidden; border: 1px solid #ddd;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30144.042063816712!2d73.16867515702272!3d19.194972695370772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be79343ec8db6cf%3A0x8fb09dcd63ba36b1!2sNakshatra%20Residency!5e0!3m2!1sen!2sin!4v1711186000000!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo" style="gap:15px">
+                        <img src="logo.jpeg" alt="Rohan Engineering Logo"
+                            style="height: 40px; width: auto; background: white; padding: 5px; border-radius: 4px;" />
+                        ROHAN ENGINEERING
+                    </a>
+                    <p>Precision pipeline fabrication and industrial structure fabrication specialists since 2019.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#strengths">Key Strengths</a></li>
+                        <li><a href="#facility">Our Facility</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Pipeline Fabrication</a></li>
+                        <li><a href="#services">Structural Steel</a></li>
+                        <li><a href="#services">Equipment Installation</a></li>
+                        <li><a href="#services">CUI Studies & Insulation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Company Details</h4>
+                    <ul class="footer-links">
+                        <li>GST: 27APQPN0723C1Z1</li>
+                        <li>PAN: APQPN0723C</li>
+                        <li>Registration Date: 17/03/2020</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; <span id="current-year">2025</span> Rohan Engineering. All Rights Reserved.</div>
+                <div>Major Projects: Godrej, Indus Biotech Pvt Ltd.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JS_BASE
+        document.addEventListener('DOMContentLoaded', () => {
+            const navbar = document.getElementById('navbar');
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            const backToTop = document.getElementById('backToTop');
+            const links = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+
+            // 2. Sticky Navbar & 10. Back to top button
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+
+                // 3. Active Nav Link Highlighting
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (window.scrollY >= sectionTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                links.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').substring(1) === current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            // 11. Dynamic Year
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+            // Mobile menu toggle
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('open');
+            });
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('open');
+                });
+            });
+
+            // 10. Back to top click
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // 4. Typewriter Effect
+            const text = "Precision. Strength. Reliability.";
+            const target = document.getElementById('typewriter');
+            target.textContent = "";
+            target.style.width = "auto";
+            let i = 0;
+            function typeWriter() {
+                if (i < text.length) {
+                    target.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 100);
+                } else {
+                    target.style.borderRight = "none";
+                }
+            }
+            setTimeout(typeWriter, 500);
+
+            // 1. Scroll-triggered animations via IntersectionObserver
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+
+                        // 5. Animated Counters
+                        if (entry.target.classList.contains('about-stats')) {
+                            const counters = entry.target.querySelectorAll('.stat-number');
+                            counters.forEach(counter => {
+                                const targetVal = +counter.getAttribute('data-target');
+                                let count = 0;
+                                const speed = targetVal / 50; // adjust speed
+                                const updateCount = () => {
+                                    count += speed;
+                                    if (count < targetVal) {
+                                        counter.innerText = Math.ceil(count) + "+";
+                                        requestAnimationFrame(updateCount);
+                                    } else {
+                                        counter.innerText = targetVal + (targetVal === 100 ? "%" : "+");
+                                    }
+                                };
+                                updateCount();
+                            });
+                        }
+
+                        // Progress bars
+                        if (entry.target.classList.contains('strength-item')) {
+                            const fill = entry.target.querySelector('.progress-fill');
+                            if (fill) fill.style.width = fill.getAttribute('data-width');
+                        }
+
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const fadeEls = document.querySelectorAll('.fade-up, .strength-item, .equipment-item, .about-stats');
+            fadeEls.forEach(el => observer.observe(el));
+        });
+
+        // 7. Accordion expand/collapse for service cards
+        function toggleService(card) {
+            const desc = card.querySelector('.service-full-desc');
+            const isVisible = desc.style.display === 'block';
+
+            // close all other open cards
+            document.querySelectorAll('.service-full-desc').forEach(d => d.style.display = 'none');
+
+            if (!isVisible) {
+                desc.style.display = 'block';
+            }
+        }
+
+        // Form submit handler
+        async function handleFormSubmit(e, form) {
+            e.preventDefault();
+            const btn = e.target.querySelector('.btn-submit');
+            const status = document.getElementById('formStatus');
+            btn.innerHTML = 'Sending...';
+            btn.disabled = true;
+            status.style.display = 'none';
+
+            const actionUrl = form.getAttribute('action');
+
+            try {
+                const response = await fetch(actionUrl, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                });
+                
+                btn.innerHTML = 'Send Message';
+                btn.disabled = false;
+                
+                if (response.ok) {
+                    status.style.display = 'block';
+                    status.style.color = '#28a745';
+                    status.innerText = 'Thank you! Your message has been sent successfully.';
+                    form.reset();
+                } else {
+                    status.style.display = 'block';
+                    status.style.color = '#dc3545';
+                    status.innerText = 'Oops! There was a problem submitting your form.';
+                }
+                setTimeout(() => status.style.display = 'none', 5000);
+            } catch (error) {
+                btn.innerHTML = 'Send Message';
+                btn.disabled = false;
+                status.style.display = 'block';
+                status.style.color = '#dc3545';
+                status.innerText = 'Oops! There was a network error. Please try again.';
+            }
+        }
+
+        // Button ripple effect
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                const ripple = document.createElement('span');
+                ripple.classList.add('ripple');
+                const rect = this.getBoundingClientRect();
+                const size = Math.max(rect.width, rect.height);
+                ripple.style.width = ripple.style.height = size + 'px';
+                ripple.style.left = (e.clientX - rect.left - size/2) + 'px';
+                ripple.style.top = (e.clientY - rect.top - size/2) + 'px';
+                this.appendChild(ripple);
+                setTimeout(() => ripple.remove(), 600);
+            });
+        });
+
+        // Spotlight tracker for stat cards
+        document.querySelectorAll('.stat-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                card.style.setProperty('--mouse-x', ((e.clientX - rect.left) / rect.width * 100) + '%');
+                card.style.setProperty('--mouse-y', ((e.clientY - rect.top) / rect.height * 100) + '%');
+            });
+        });
+    </script>
+
+    <!-- Pretext Interactive Effects Module -->
+    <script type="module" src="pretext-effects.js"></script>
+
+    <!-- OPPO-Inspired Scroll Effects Engine -->
+    <script src="scroll-effects.js"></script>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <svg viewBox="0 0 24 24">
+            <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z" />
+        </svg>
+    </button>
+
+</body>
+
+</html>
