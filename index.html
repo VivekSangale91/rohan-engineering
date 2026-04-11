@@ -2045,8 +2045,9 @@
         <div class="container fade-up">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-grid" style="margin-top:40px;">
-                <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="handleFormSubmit(event, this)">
-                    <input type="hidden" name="access_key" value="528f0d2e-1be2-43a3-b428-8f75cc97e991">
+                <form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/rohan.engineering2@gmail.com" method="POST" onsubmit="handleFormSubmit(event, this)">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
                     <div class="form-group">
                         <input type="text" class="form-control" name="name" id="formName" required>
                         <label class="form-label" for="formName">Full Name</label>
@@ -2066,15 +2067,13 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="subject" id="formSubject" required>
+                        <input type="text" class="form-control" name="_subject" id="formSubject" required>
                         <label class="form-label" for="formSubject">Subject</label>
                     </div>
                     <div class="form-group">
                         <textarea class="form-control" name="message" id="formMessage" rows="4" required></textarea>
                         <label class="form-label" for="formMessage">Message</label>
                     </div>
-                    <input type="hidden" name="subject" value="New Contact Form Request: Rohan Engineering">
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                     <button type="submit" class="btn btn-primary btn-submit">Send Message</button>
                     <div id="formStatus" style="display:none; margin-top:15px; text-align:center; font-weight:500;"></div>
                 </form>
