@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rohan Engineering - Precision pipeline fabrication and industrial structure fabrication specialists in Maharashtra.">
-    <meta name="keywords" content="Pipeline Fabrication, Structural Steel, NDT Testing, Equipment Installation, CUI Studies, Maharashtra Engineering, Rohan Engineering">
+    <meta name="description" content="Rohan Engineering - Pipeline fabrication, structural steel, shutdown support, turnkey projects, manpower supply & mechanical maintenance specialists in Maharashtra.">
+    <meta name="keywords" content="Pipeline Fabrication, Structural Steel, NDT Testing, Equipment Installation, CUI Studies, Shutdown Support, Turnkey Projects, Manpower Supply, Mechanical Maintenance, Maharashtra Engineering, Rohan Engineering">
     <meta name="author" content="Rohan Engineering">
     <meta property="og:title" content="Rohan Engineering | Precision. Strength. Reliability.">
-    <meta property="og:description" content="Precision pipeline fabrication and industrial structure fabrication specialists since 2019.">
+    <meta property="og:description" content="Pipeline fabrication, shutdown support, turnkey projects, manpower supply & industrial structure fabrication specialists since 2019.">
     <meta property="og:image" content="https://rohanengineering.in/logo.jpeg">
     <meta property="og:url" content="https://rohanengineering.in">
     <meta name="twitter:card" content="summary_large_image">
@@ -134,6 +134,9 @@
         .fade-up.in-view .service-card:nth-child(7) { animation-delay: 0.35s; }
         .fade-up.in-view .service-card:nth-child(8) { animation-delay: 0.4s; }
         .fade-up.in-view .service-card:nth-child(9) { animation-delay: 0.45s; }
+        .fade-up.in-view .service-card:nth-child(10) { animation-delay: 0.5s; }
+        .fade-up.in-view .service-card:nth-child(11) { animation-delay: 0.55s; }
+        .fade-up.in-view .service-card:nth-child(12) { animation-delay: 0.6s; }
         .fade-up.in-view .hex-item:nth-child(1) { animation-delay: 0.05s; }
         .fade-up.in-view .hex-item:nth-child(2) { animation-delay: 0.12s; }
         .fade-up.in-view .hex-item:nth-child(3) { animation-delay: 0.19s; }
@@ -614,6 +617,12 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
+        }
+
+        @media (min-width: 1400px) {
+            .services-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
         }
 
         .service-card {
@@ -1605,8 +1614,7 @@
         <div class="container hero-content">
             <div class="hero-badge fade-up in-view">Est. 2019 | Karjat, Maharashtra</div>
             <h1 class="hero-heading" id="typewriter">Precision. Strength. Reliability.</h1>
-            <p class="hero-subtext fade-up in-view" style="transition-delay: 0.2s;">Pipeline Fabrication & Industrial
-                Structure Specialists since 2019</p>
+            <p class="hero-subtext fade-up in-view" style="transition-delay: 0.2s;">Pipeline Fabrication · Shutdown Support · Turnkey Projects · Manpower Supply since 2019</p>
             <div class="hero-ctas fade-up in-view" style="transition-delay: 0.4s;">
                 <a href="#services" class="btn btn-primary">Explore Services</a>
                 <a href="#contact" class="btn btn-outline">Contact Us</a>
@@ -1625,15 +1633,15 @@
             <div class="about-text fade-up">
                 <h2 class="section-title">Who We Are</h2>
                 <p>We are pleased to introduce Rohan Engineering, established in 2019, and recognized for our expertise
-                    in pipeline fabrication and industrial structure fabrication work. Over the years, we have built a
+                    in pipeline fabrication, industrial structure fabrication, shutdown support, turnkey project execution, and manpower supply. Over the years, we have built a
                     reputation for delivering reliable, high-quality engineering solutions tailored to client needs.</p>
-                <p>Our services extend beyond fabrication. We provide material selection support in line with ASME and
+                <p>Our services extend beyond fabrication. We provide comprehensive shutdown support including maintenance, fabrication and installation during plant shutdowns. We execute turnkey projects covering both mechanical and electrical disciplines end-to-end. We also offer material selection support in line with ASME and
                     ASTM standards, ensuring compliance and durability. We are highly skilled in pipeline inspection and
                     in calculating the remaining life of pipelines, helping clients plan for long-term operational
                     efficiency. Our team also specializes in corrosion under insulation (CUI) studies, offering valuable
                     insights to enhance pipeline and structural reliability.</p>
                 <p>With a strong team of engineers, we excel in technical analysis, project scheduling, and execution
-                    planning. In addition, we provide insulation services and supply high-quality materials as per
+                    planning. We supply skilled manpower for mechanical maintenance and provide insulation services and supply high-quality materials as per
                     customer requirements. Our operations strictly follow good welding practices and procedures,
                     ensuring safety, precision, and longevity in every project.</p>
             </div>
@@ -1776,6 +1784,33 @@
                     <p class="service-short-desc">Thermal and acoustic structural insulation.</p>
                     <div class="service-full-desc">Applying high-grade insulation materials for process temperature
                         control and energy efficiency.</div>
+                </div>
+                <!-- Card 10: Shutdown Support -->
+                <div class="service-card" onclick="toggleService(this)">
+                    <svg class="service-icon" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                    </svg>
+                    <h3>Shutdown Support</h3>
+                    <p class="service-short-desc">Maintenance, fabrication & installation during plant shutdowns.</p>
+                    <div class="service-full-desc">Comprehensive shutdown support services including preventive & breakdown maintenance, on-site fabrication, equipment installation, and commissioning during planned and emergency plant shutdowns. We ensure minimal downtime with rapid mobilization of skilled teams and resources.</div>
+                </div>
+                <!-- Card 11: Turnkey Projects -->
+                <div class="service-card" onclick="toggleService(this)">
+                    <svg class="service-icon" viewBox="0 0 24 24">
+                        <path d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z" />
+                    </svg>
+                    <h3>Turnkey Projects</h3>
+                    <p class="service-short-desc">End-to-end Mechanical & Electrical project delivery.</p>
+                    <div class="service-full-desc">Complete turnkey solutions covering design, procurement, fabrication, erection, and commissioning for both mechanical and electrical projects. From concept to handover, we manage the entire project lifecycle ensuring quality, safety, and timely delivery.</div>
+                </div>
+                <!-- Card 12: Manpower Supply -->
+                <div class="service-card" onclick="toggleService(this)">
+                    <svg class="service-icon" viewBox="0 0 24 24">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" />
+                    </svg>
+                    <h3>Manpower Supply</h3>
+                    <p class="service-short-desc">Skilled workforce for mechanical maintenance operations.</p>
+                    <div class="service-full-desc">Reliable supply of skilled and semi-skilled manpower for mechanical maintenance contracts. Our workforce includes supervisors, welders, fitters, riggers, and helpers — all trained in industrial safety standards and ready for immediate deployment at your facility.</div>
                 </div>
             </div>
         </div>
@@ -2132,7 +2167,7 @@
                             style="height: 40px; width: auto; background: white; padding: 5px; border-radius: 4px;" />
                         ROHAN ENGINEERING
                     </a>
-                    <p>Precision pipeline fabrication and industrial structure fabrication specialists since 2019.</p>
+                    <p>Pipeline fabrication, shutdown support, turnkey projects, manpower supply & industrial engineering specialists since 2019.</p>
                 </div>
                 <div>
                     <h4 class="footer-heading">Quick Links</h4>
@@ -2150,7 +2185,9 @@
                         <li><a href="#services">Pipeline Fabrication</a></li>
                         <li><a href="#services">Structural Steel</a></li>
                         <li><a href="#services">Equipment Installation</a></li>
-                        <li><a href="#services">CUI Studies & Insulation</a></li>
+                        <li><a href="#services">Shutdown Support</a></li>
+                        <li><a href="#services">Turnkey Projects</a></li>
+                        <li><a href="#services">Manpower Supply</a></li>
                     </ul>
                 </div>
                 <div>
